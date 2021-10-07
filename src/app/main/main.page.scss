@@ -1,0 +1,147 @@
+//ion-header {
+//    ion-toolbar {
+//        --padding-start: 10px;
+//        --padding-end: 10px;
+//        ion-title {
+//            font-size: 14px;
+//            color:white;
+//            background: var(--dark-color);
+//            font-family: mon-bold;
+//        }
+//        .menu {
+//            color:white;
+//        }
+//    }
+//}
+ion-header {
+    ion-toolbar {
+        --padding-start: 10px;
+        --padding-end: 10px;
+        ion-title {
+            font-size: 14px;
+            color: var(--black-color);
+            font-family: mon-bold;
+        }
+        ion-icon {
+            color: var(--black-color);
+            font-size: 20px;
+        }
+        .menu {
+            color: black;
+        }
+        .search-top {
+            margin-right: 13px;
+            margin-left: 13px;
+        }
+    }
+}
+ion-content
+{
+    --background: var(--dark-color);
+    font-size: 14px;
+}
+.card
+{
+    background: url(../../assets/tatto1.jpg) 0 0/100% 100% no-repeat;
+    height: 160px;
+    width: 84%;
+    margin:8%;
+    margin-top: 4%;
+    border-radius: 10px;
+}
+.search
+{
+    background: white;
+    border-radius: 30px;
+    padding-left: 30px !important;
+    width: 90%;
+    margin-left:5%;
+    margin-top: 20%;
+    height: 42px;
+    color: black;
+}
+.icon
+{
+    position: absolute;
+    font-size: 18px;
+    right: 5%;
+    color:black;
+}
+.card2
+{
+    background: url(../../assets/tatto2.jpg) 0 0/100% 100% no-repeat;
+}
+.card3
+{
+    background: url(../../assets/tatto3.jpg) 0 0/100% 100% no-repeat;
+}
+.row
+{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.img
+{
+ border-radius: 5px;
+ height: 70px;
+}
+.name
+{
+   color: white;
+}
+.shoprow
+{
+    width: 84%;
+    margin-left:8%;
+    border-bottom: 1.5px solid white;
+    padding-bottom: 5px;
+    padding-top: 13px;
+}
+.shop
+{
+ border-radius: 5px;
+ height: 60px;
+}
+.shopname
+{
+    color: white;
+    margin: 2px;
+    margin-bottom: 5px;
+}
+.des
+{
+    color: gray;
+    font-size: 12px;
+    margin: 2px;
+    margin-bottom: 5px;
+}
+.time
+{
+    color:var(--green-color);
+    font-size: 12px;
+    margin: 2px;
+    margin-bottom: 5px;
+}
+.book
+{
+    color:var(--green-color);
+    border:2px solid  var(--green-color);
+    border-radius: 5px;
+    text-transform: none;
+    font-size: 14px;
+    height: 30px;
+}
+.map
+{
+    color: gray;
+    position: absolute;
+    left: 22%;
+}
+.km
+{
+    color: gray;
+    text-align:center;
+    margin-top: 0px;
+    margin-left: 20px;
+}

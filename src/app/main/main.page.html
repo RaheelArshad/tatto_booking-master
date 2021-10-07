@@ -1,0 +1,66 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-menu-button class="menu" autohide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-icon (click)="search()" class="search-top" name="search" slot="end"></ion-icon>
+    <ion-icon (click)="appoint()" name="browsers-outline" slot="end"></ion-icon>
+    <ion-title>
+      {{'Home'}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="card">
+    <ion-input placeholder='Tradition Tatto Style' class="search" (ionChange)="tattooSearch($event)"><ion-icon name="search-outline" class="icon"></ion-icon></ion-input>
+  </ion-card>
+  <ng-template [ngIf]="finalTattoos.length != 0">
+    <ion-grid>
+      <ion-row class="row" (click)="presentModal()" *ngFor="let tattoo of finalTattoos">
+        <ion-col size='4'>
+          <img [src]="imgUrl + tattoo.image" class="img">
+        </ion-col>
+        <ion-col size='8'>
+          <p class="name">{{tattoo.name}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ng-template>
+  <ion-card class="card card2">
+    <ion-input placeholder='Search by Artist Name' class="search" (ionChange)="artistSearch($event)"><ion-icon name="search-outline" class="icon"></ion-icon></ion-input>
+  </ion-card>
+
+  <ion-grid *ngIf="finalArtist.length != 0">
+    <ion-row class="row" *ngFor="let artist of finalArtist">
+      <ion-col size='4'>
+        <img [src]="'http://barber2.localhost/storage/images/artist/' + artist.image" class="img">
+      </ion-col>
+      <ion-col size='8'>
+        <p class="name">{{ artist.name }}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card class="card card3">
+    <ion-input placeholder='Search by Shop Name' class="search" (ionChange)="shopSearch($event)"><ion-icon name="search-outline" class="icon"></ion-icon></ion-input>
+  </ion-card>
+
+  <ion-grid *ngIf="finalShops.length != 0"style="margin-top: -15px;">
+    <ion-row class="shoprow" *ngFor="let shop of finalShops">
+      <ion-col size='2.5'>
+        <img [src]="saloonImgUrl + shop.image" class="shop">
+      </ion-col>
+      <ion-col size='6.5'>
+        <p class="shopname">{{ shop.name }}</p>
+        <p class="des">{{ shop.desc }}</p>
+        <p class="time"> {{shop.monday.open}} - {{shop.monday.close}}</p>
+      </ion-col>
+      <ion-col size='3'>
+        <ion-button class="book" (click)="book(shop.salon_id)" fill='clear'>About</ion-button>
+          <ion-icon name='location' class="map"></ion-icon>
+          <p class="km">1Km</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,117 @@
+ion-content
+{
+    --background: var(--dark-color);
+}
+.card
+{
+    background:url(../../assets/artist4.jpg) 0 0/100% 100% no-repeat;
+    height: 160px;
+    width: 84%;
+    margin:8%;
+    margin-top: 4%;
+    border-radius: 10px;
+    z-index: -1;
+}
+.name
+{
+    color: white;
+    font-size: 22px;
+    margin-top: 20%;
+    text-align: center;
+}
+.div
+{
+    background: white;
+    padding-top: 7%;
+    padding-bottom: 15%;
+    width: 82%;
+    margin:9%;
+    border-radius: 10px;
+    margin-top: -13%;
+    z-index: 999;
+}
+.loc
+{
+    position: absolute;
+    top: 31%;
+    left: 20%;
+    color: black;
+    z-index: 999;
+    font-size: 20px;
+}
+
+.input
+{
+    border-radius: 30px;
+    padding-left: 50px !important;
+    width: 90%;
+    margin-left:5%;
+    margin-top: 2%;
+    height: 42px;
+    border: 1px solid black;
+}
+.search
+{
+    --background: var(--dark-color);
+    width: 86%;
+    height: 42px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 10%;
+    text-transform: none;
+}
+.shoprow
+{
+    width: 84%;
+    margin-left:8%;
+    border-bottom: 1.5px solid white;
+    padding-bottom: 5px;
+    padding-top: 13px;
+}
+.shop
+{
+ border-radius: 5px;
+ height: 60px;
+}
+.shopname
+{
+    color: white;
+    margin: 2px;
+    margin-bottom: 5px;
+}
+.des
+{
+    color: gray;
+    font-size: 12px;
+    margin: 2px;
+    margin-bottom: 5px;
+}
+.time
+{
+    color:var(--green-color);
+    font-size: 12px;
+    margin: 2px;
+    margin-bottom: 5px;
+}
+.book
+{
+    color:var(--green-color);
+    border:2px solid  var(--green-color);
+    border-radius: 5px;
+    text-transform: none;
+    font-size: 14px;
+    height: 30px;
+}
+.map
+{
+    color: gray;
+    position: absolute;
+    left: 22%;
+}
+.km
+{
+    color: gray;
+    text-align:center;
+    margin-top: 0px;
+    margin-left: 20px;
+}

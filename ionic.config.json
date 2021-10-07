@@ -1,0 +1,8 @@
+{
+  "name": "thebarber",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">thebarber</string>
+    <string name="title_activity_main">thebarber</string>
+    <string name="package_name">com.thebarber.app</string>
+    <string name="custom_url_scheme">com.thebarber.app</string>
+    <string name="fb_app_id">918174555445588</string>
+    <string name="fb_app_name">thebarber</string>
+    <bool name="fb_auto_log_app_events_enabled">true</bool>
+    <bool name="fb_advertiser_id_collection_enabled">true</bool>
+</resources>

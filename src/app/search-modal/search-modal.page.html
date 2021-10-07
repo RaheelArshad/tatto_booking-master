@@ -1,0 +1,57 @@
+<ion-content>
+  <ion-card class="card">
+    <p class="name">Realism and Realistics<br> Tatto Style</p>
+  </ion-card>
+  <div class="div">
+    <ion-icon name='location' class="loc"></ion-icon>
+    <ion-input placeholder='Location' class="input" (click)="dismiss()"></ion-input>
+    <ion-button class="search" (click)="Card()">Search</ion-button>
+  </div>
+  <ion-grid *ngIf="card" >
+    <ion-row class="shoprow" style="margin-top: -15px;">
+      <ion-col size='2.5'>
+        <img src="assets/shop.jpg" class="shop">
+      </ion-col>
+      <ion-col size='6.5'>
+        <p class="shopname">Barberque</p>
+        <p class="des">Vishwashanti marg,Near</p>
+        <p class="time">08: am- 09:00 pm</p>
+      </ion-col>
+      <ion-col size='3'>
+        <ion-button class="book" fill='clear'>Book</ion-button>
+          <ion-icon name='location' class="map"></ion-icon>
+          <p class="km">1Km</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="shoprow">
+      <ion-col size='2.5'>
+        <img src="assets/shop.jpg" class="shop">
+      </ion-col>
+      <ion-col size='6.5'>
+        <p class="shopname">Barberque</p>
+        <p class="des">Vishwashanti marg,Near</p>
+        <p class="time">08: am- 09:00 pm</p>
+      </ion-col>
+      <ion-col size='3'>
+        <ion-button class="book" fill='clear'>Book</ion-button>
+          <ion-icon name='location' class="map"></ion-icon>
+          <p class="km">1Km</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="shoprow">
+      <ion-col size='2.5'>
+        <img src="assets/shop.jpg" class="shop">
+      </ion-col>
+      <ion-col size='6.5'>
+        <p class="shopname">Barberque</p>
+        <p class="des">Vishwashanti marg,Near</p>
+        <p class="time">08: am- 09:00 pm</p>
+      </ion-col>
+      <ion-col size='3'>
+        <ion-button class="book" fill='clear'>Book</ion-button>
+          <ion-icon name='location' class="map"></ion-icon>
+          <p class="km">1Km</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
